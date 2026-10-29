@@ -23,18 +23,9 @@ import {
   Sparkles,
   ArrowRight
 } from 'lucide-react';
-import { api } from '../lib/api';
+import { api, resolveImageUrl } from '../lib/api';
 import { CaseStudy } from '../types';
 import { Link } from 'react-router-dom';
-
-const resolveImageUrl = (url?: string) => {
-  if (!url) return '';
-  if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) {
-    return url;
-  }
-  const apiBase = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
-  return `${apiBase}${url.startsWith('/') ? '' : '/'}${url}`;
-};
 
 export const CaseStudiesPage: React.FC = () => {
   const [cases, setCases] = useState<CaseStudy[]>([]);
