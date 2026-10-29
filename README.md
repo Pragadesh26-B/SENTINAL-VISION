@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CRIMEFACE AI - Forensic Biometric Reconstruction System
 
 CRIMEFACE AI is a full-stack forensic application designed to transform verbal eyewitness descriptions into photorealistic facial composites using Google Gemini 2.5 Flash and iteratively refine them with witness feedback.
@@ -110,3 +111,6 @@ cd frontend
 npm run dev
 ```
 Frontend interface will be accessible at: `http://localhost:5173`
+=======
+# SENTINAL-VISION
+>>>>>>> 25a0842cd076230643e64a98cc29a06b39f07328
